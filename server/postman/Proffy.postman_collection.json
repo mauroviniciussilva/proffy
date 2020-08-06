@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "d78cb905-5c68-46e3-aec1-c050f9cb6021",
+		"name": "Proffy",
+		"description": "Requests for Proffy, a system developed based on the OmniStack track from the Rocketseat Next Level Week #2 bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Connections",
+			"item": [
+				{
+					"name": "Create Connections",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/connections",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"connections"
+							]
+						},
+						"description": "Route to add a new connection to the database."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Connections",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/connections",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"connections"
+							]
+						},
+						"description": "Retourn a count of how many connections were made."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Mauro\",\r\n    \"last_name\": \"Oliveira\",\r\n    \"avatar\": \"https://avatars0.githubusercontent.com/u/49000408?s=460&u=99755dc0feb311bd5b238229d90609fd37be2af9&v=4\",\r\n    \"whatsapp\": \"5511999999999\",\r\n    \"bio\": \"Sociology teacher for all levels of education\"  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"users"
+							]
+						},
+						"description": "Route to create a User"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Classes",
+			"item": [
+				{
+					"name": "Create Class",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 1,\r\n    \"subject\": \"Sociology\",\r\n    \"price\": \"30\",\r\n    \"schedule\": [\r\n        {\r\n            \"week_day\": 1,\r\n            \"from\": \"08:00\",\r\n            \"to\": \"12:00\"\r\n        },\r\n        {\r\n            \"week_day\": 3,\r\n            \"from\": \"10:00\",\r\n            \"to\": \"18:00\"\r\n        },\r\n        {\r\n            \"week_day\": 4,\r\n            \"from\": \"08:00\",\r\n            \"to\": \"12:00\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/classes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"classes"
+							]
+						},
+						"description": "Route to create a class."
+					},
+					"response": []
+				},
+				{
+					"name": "List Classes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/classes?week_day=1&subject=Sociology&time=11:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"classes"
+							],
+							"query": [
+								{
+									"key": "week_day",
+									"value": "1"
+								},
+								{
+									"key": "subject",
+									"value": "Sociology"
+								},
+								{
+									"key": "time",
+									"value": "11:00"
+								}
+							]
+						},
+						"description": "Route to list all the classes from the database, returning informations about the teacher as well."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c434f443-9f86-4e40-bd34-7196d61341b8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "2fcec147-75bb-4c1a-bd7b-b3add5ce0744",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
