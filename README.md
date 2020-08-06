@@ -44,16 +44,15 @@ This project was made using the follow technologies:
 The API was built with the following functionalities:
 
 ### Connections
-- Route to create a new connection;
-- Route to list the total of connections made;
+- Create connection;
+- List the total of connections made;
 
 ### Users
-- Route to create user
+- Create user
 
 ### Classes
-- Route to create class;
-- Route to list classes;
-  - Filtered per subject, week day and time;
+- Create class;
+- List classes (filtered per subject, week day and time);
 
 > NOTE: you can find a [Postman](https://www.postman.com/) Collection at the `server/postman` folder, with examples of all the requests.
 
@@ -79,19 +78,19 @@ Follow these steps to get everything ready before running the API:
 1. Create Databse
 
 ```SQL
-  CREATE DATABASE proffy
+CREATE DATABASE proffy
 ```
 
 2. Run Migrations
 
-```bash
-  npm run knex:migrate
+```
+npm run knex:migrate
 ```
 
 3. Run the Seed
 
-```bash
-  npm run knex:seed
+```
+npm run knex:seed
 ```
 
 ---
@@ -106,14 +105,18 @@ git clone https://github.com/mauroviniciussilva/proffy.git
 
 2. Run API
 
-```bash
-# Go to server folder
+#### Go to server folder
+```
 cd server
+```
 
-# Install dependencies
+#### Install dependencies
+```
 npm install
+```
 
-# Run aplication
+#### Run application
+```
 npm start
 ```
 
@@ -121,14 +124,18 @@ npm start
 
 3. Run WEB Project
 
+#### Go to web folder
 ```bash
-# Go to web folder
 cd web
+```
 
-# Install dependencies
+#### Install dependencies
+```
 npm install
+```
 
-# Run application
+#### Run application
+```
 npm start
 ```
 
