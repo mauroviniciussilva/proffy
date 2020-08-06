@@ -75,19 +75,17 @@ DB_HOST=<database_host>
 
 Follow these steps to get everything ready before running the API:
 
-1. Create Databse
-
+#### Create Database
 ```SQL
 CREATE DATABASE proffy
 ```
 
-2. Run Migrations
-
+#### Run Migrations
 ```
 npm run knex:migrate
 ```
 
-3. Run the Seed
+#### Run the Seed
 
 ```
 npm run knex:seed
@@ -97,13 +95,13 @@ npm run knex:seed
 
 # How to run
 
-1. Clone Repository
+## 1. Clone Repository
 
 ```bash
 git clone https://github.com/mauroviniciussilva/proffy.git
 ```
 
-2. Run API
+## 2. Run API
 
 #### Go to server folder
 ```
@@ -115,14 +113,14 @@ cd server
 npm install
 ```
 
-#### Run application
+#### Run
 ```
 npm start
 ```
 
-> NOTE: API will run at port 3333
+> **NOTE**: *API will run at port 3333*
 
-3. Run WEB Project
+## 3. Run WEB Project
 
 #### Go to web folder
 ```bash
@@ -139,4 +137,4 @@ npm install
 npm start
 ```
 
-> NOTE: WEB Application will run at port 3000
+> **NOTE**: *WEB Application will run at port 3000*
