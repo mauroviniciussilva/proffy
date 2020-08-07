@@ -1,4 +1,4 @@
-#page-teacher-list {
+#page-class-list {
     width: 100vw;
     height: 100vh;
 }
@@ -11,7 +11,7 @@
     color: var(--color-text-in-primary);
 }
 
-#page-teacher-list main {
+#page-class-list main {
     margin: 3.2rem auto;
     width: 90%;
 }
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: 700px) {
-    #page-teacher-list {
+    #page-class-list {
         max-width: 100%;
     }
 
@@ -59,7 +59,7 @@
         margin-top: 0;
     }
 
-    #page-teacher-list main {
+    #page-class-list main {
         padding: 3.2rem 0;
         max-width: 740px;
         margin: 0 auto;

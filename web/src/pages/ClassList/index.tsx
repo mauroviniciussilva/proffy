@@ -6,7 +6,7 @@ import Select from '../../components/Select';
 import api from '../../services/api';
 import './styles.css';
 
-function TeacherList() {
+function ClassList() {
     const [ classItems, setClassItem ] = useState([]);
     const [ subject, setSubject ] = useState('');
     const [ week_day, setWeekDay ] = useState('');
@@ -27,7 +27,7 @@ function TeacherList() {
     }
 
     return (
-        <div id="page-teacher-list" className="container">
+        <div id="page-class-list" className="container">
             <PageHeader title="These are the available proffys">
                 <form id="search-classes" onSubmit={searchClasses}>
                     <Select 
@@ -94,4 +94,4 @@ function TeacherList() {
     );
 }
 
-export default TeacherList;
+export default ClassList;
