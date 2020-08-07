@@ -33,6 +33,7 @@
    <img src="./docs/mobile-landing.jpg" width="180">
    <img src="./docs/mobile-list-proffys.jpg" width="180">
    <img src="./docs/mobile-available-proffys.jpg" width="180">
+   <br/>
    <img src="./docs/mobile-favorites-proffys.jpg" width="180">
    <img src="./docs/mobile-give-classes.jpg" width="180">
 </div>
@@ -170,13 +171,15 @@ npm start
 
 When you run it, the expo developer tools should open on a browse window. 
 
-#### IMPORTANT!
-##### Before you open it on your phone or emulator, change the `baseURL` for your IP Adress in the `api.ts` file, located in `mobile/src/services` folder.
+> #### IMPORTANT!
+> Before you open it on your phone or emulator, change the `baseURL` for your IP Adress in the `api.ts` file, located in `mobile/src/services` folder.
 
-You need to read the QRCode with the app of [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) or run on emulator to see the result.
+You need to read the QRCode with [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) app, or run on emulator to see the result.
 
 ---
 
-I am still working on this project and new features will soon be available. These include user login, API improvements and teacher and class registration flow.
-
-Feel free to **[file a new issue](https://github.com/mauroviniciussilva/proffy/issues)**. If you already found a solution to your problem, **i would love to review your pull request**!
+<div style="text-align: center">
+  
+  #### I am still working on this project and new features will be available soon. These include: user login, API improvements and teacher and class registration flow.
+  
+</div>
